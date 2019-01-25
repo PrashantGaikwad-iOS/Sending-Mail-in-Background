@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C221604BDBC276641504111 /* Pods_Sending_Mail_in_Background.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BFB49F9F206E5D99FF2F0C /* Pods_Sending_Mail_in_Background.framework */; };
 		897AA70021F8CF5F0043B7BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897AA6FF21F8CF5F0043B7BD /* AppDelegate.swift */; };
 		897AA70221F8CF5F0043B7BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897AA70121F8CF5F0043B7BD /* ViewController.swift */; };
 		897AA70521F8CF5F0043B7BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897AA70321F8CF5F0043B7BD /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FC7B570E337F88194A5DD4E /* Pods-Sending Mail in Background.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sending Mail in Background.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sending Mail in Background/Pods-Sending Mail in Background.debug.xcconfig"; sourceTree = "<group>"; };
 		897AA6FC21F8CF5F0043B7BD /* Sending Mail in Background.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sending Mail in Background.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		897AA6FF21F8CF5F0043B7BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		897AA70121F8CF5F0043B7BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		897AA70621F8CF620043B7BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897AA70921F8CF620043B7BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897AA70B21F8CF620043B7BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897AA71121F8D4960043B7BD /* sendEmail_bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sendEmail_bridge.h; sourceTree = "<group>"; };
+		BC78977703FFE685DDCC4DDF /* Pods-Sending Mail in Background.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sending Mail in Background.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sending Mail in Background/Pods-Sending Mail in Background.release.xcconfig"; sourceTree = "<group>"; };
+		E0BFB49F9F206E5D99FF2F0C /* Pods_Sending_Mail_in_Background.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sending_Mail_in_Background.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C221604BDBC276641504111 /* Pods_Sending_Mail_in_Background.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		854B0B9326791B318E208652 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0BFB49F9F206E5D99FF2F0C /* Pods_Sending_Mail_in_Background.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		897AA6F321F8CF5E0043B7BD = {
 			isa = PBXGroup;
 			children = (
 				897AA6FE21F8CF5F0043B7BD /* Sending Mail in Background */,
 				897AA6FD21F8CF5F0043B7BD /* Products */,
+				C42E314E9B4D63DC68C5A740 /* Pods */,
+				854B0B9326791B318E208652 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +72,22 @@
 			children = (
 				897AA6FF21F8CF5F0043B7BD /* AppDelegate.swift */,
 				897AA70121F8CF5F0043B7BD /* ViewController.swift */,
+				897AA71121F8D4960043B7BD /* sendEmail_bridge.h */,
 				897AA70321F8CF5F0043B7BD /* Main.storyboard */,
 				897AA70621F8CF620043B7BD /* Assets.xcassets */,
 				897AA70821F8CF620043B7BD /* LaunchScreen.storyboard */,
 				897AA70B21F8CF620043B7BD /* Info.plist */,
 			);
 			path = "Sending Mail in Background";
+			sourceTree = "<group>";
+		};
+		C42E314E9B4D63DC68C5A740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FC7B570E337F88194A5DD4E /* Pods-Sending Mail in Background.debug.xcconfig */,
+				BC78977703FFE685DDCC4DDF /* Pods-Sending Mail in Background.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 897AA70E21F8CF620043B7BD /* Build configuration list for PBXNativeTarget "Sending Mail in Background" */;
 			buildPhases = (
+				5DF41DDA3C483E08FB0ABCCE /* [CP] Check Pods Manifest.lock */,
 				897AA6F821F8CF5F0043B7BD /* Sources */,
 				897AA6F921F8CF5F0043B7BD /* Frameworks */,
 				897AA6FA21F8CF5F0043B7BD /* Resources */,
@@ -129,6 +156,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DF41DDA3C483E08FB0ABCCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sending Mail in Background-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		897AA6F821F8CF5F0043B7BD /* Sources */ = {
@@ -280,10 +328,17 @@
 		};
 		897AA70F21F8CF620043B7BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC7B570E337F88194A5DD4E /* Pods-Sending Mail in Background.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H28X75MLUY;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+				);
 				INFOPLIST_FILE = "Sending Mail in Background/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,6 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantg.Sending-Mail-in-Background";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/prashantg/Desktop/Daily Tasks/2019/Jan/Sending Mail in Background/Sending Mail in Background/sendEmail_bridge.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,10 +354,17 @@
 		};
 		897AA71021F8CF620043B7BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC78977703FFE685DDCC4DDF /* Pods-Sending Mail in Background.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H28X75MLUY;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios\"",
+					"\"${PODS_ROOT}/Headers/Public/mailcore2-ios/MailCore\"",
+				);
 				INFOPLIST_FILE = "Sending Mail in Background/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +372,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.prashantg.Sending-Mail-in-Background";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/prashantg/Desktop/Daily Tasks/2019/Jan/Sending Mail in Background/Sending Mail in Background/sendEmail_bridge.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
